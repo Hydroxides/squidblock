@@ -1,0 +1,9 @@
+syntax: regexp
+.*\.default
+.*\.documented
+
+syntax: glob
+errorpage.css
+cachemgr.conf
+mime.conf
+squid.conf
