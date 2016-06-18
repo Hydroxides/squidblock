@@ -1,0 +1,5 @@
+acl regex_denied url_regex "/etc/squid/regex_denied.acl"
+acl denied_domains dstdomain "/etc/squid/denied_domains.acl"
+# Deny access to our custom blocklist
+http_access deny denied_domains
+http_access deny regex_denied
